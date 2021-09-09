@@ -1,0 +1,32 @@
+.productCard-main {
+  margin-top: 300px;
+}
+.atagExt {
+  text-decoration: none;
+  color: blue;
+  transition: 2s;
+}
+.atagExt:hover {
+  text-transform: uppercase;
+}
+.atagCat {
+  text-decoration: none;
+}
+.atagCat:hover {
+  text-size-adjust: 1.2rem;
+}
+.atagExt small {
+  margin-top: 1.2rem;
+}
+.carousel-control-prev {
+  z-index: 1500;
+}
+.carousel-control-next {
+  z-index: 1500;
+}
+.carousel-control-prev-icon {
+  background-color: rgb(104, 104, 104);
+}
+.carousel-control-next-icon {
+  background-color: rgb(104, 104, 104);
+}

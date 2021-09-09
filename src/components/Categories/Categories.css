@@ -1,0 +1,55 @@
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.205rem;
+  padding-bottom: 0.205rem;
+  margin-top: 70px;
+  background-color: #232f3e;
+  color: white;
+  z-index: 4;
+}
+.navbar a {
+  text-decoration: unset;
+  color: white;
+  padding: 5px;
+}
+.product-hover {
+  padding: 0px 15px 0px 15px;
+  margin-left: 15px;
+}
+.product-hover:hover {
+  /* border: 1px solid white; */
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 0px 15px 0px 15px;
+}
+/*.navbar img:hover {
+  border: 1px solid white;
+} */
+.toggle-icon {
+  font-size: large;
+}
+.side-pannel {
+  list-style-type: none;
+  font-style: none;
+}
+.side-pannel a {
+  text-decoration: unset;
+  color: #7c7c7c;
+  margin-bottom: 5px;
+}
+.arrow-icon {
+  float: right;
+}
+.navbar-nav span {
+  color: white;
+}
+@media only screen and (min-width: 974px) {
+  .navbar-nav .nav-item a {
+    visibility: none;
+  }
+}
