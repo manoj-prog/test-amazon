@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Categories.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
@@ -12,6 +13,7 @@ const Categories = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const history = useHistory();
   return (
     <div>
       <div>
@@ -90,7 +92,11 @@ const Categories = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="!#">
+                      <a
+                        href="!#"
+                        onClick={() => history.push("/menfashion")}
+                        style={{ cursor: "pointer" }}
+                      >
                         Men's fashion
                         <KeyboardArrowRightIcon className="arrow-icon" />
                       </a>
@@ -118,8 +124,13 @@ const Categories = () => {
                   </a>
                 </li>
                 <li class="nav-item product-hover ml-2">
-                  <a class="nav-link active" aria-current="page" href="!#">
-                    <span>Fashion</span>
+                  <a
+                    href="!#"
+                    onClick={() => history.push("/menfashion")}
+                    class="nav-link active"
+                    aria-current="page"
+                  >
+                    <span>MensFashion</span>
                   </a>
                 </li>
                 <li class="nav-item product-hover ml-2">
@@ -157,52 +168,22 @@ const Categories = () => {
                     <span>Books</span>
                   </a>
                 </li>
+                <li class="nav-item product-hover ml-2">
+                  <a class="nav-link active" aria-current="page" href="!#">
+                    <span>Sell</span>
+                  </a>
+                </li>
+                <li class="nav-item product-hover ml-2">
+                  <a class="nav-link active" aria-current="page" href="!#">
+                    <span>Coupons</span>
+                  </a>
+                </li>
+                <li class="nav-item product-hover ml-2">
+                  <a class="nav-link active" aria-current="page" href="!#">
+                    <span>Cars&Motor</span>
+                  </a>
+                </li>
               </ul>
-            </div>
-            {/* <div className="product-hover">
-            <span>Mobiles</span>
-          </div> */}
-            {/* <div>
-            <a href="#">BestSeller</a>
-          </div>
-          <div>
-            <a href="#">Fashion</a>
-          </div>
-          <div>
-            <a href="#">AmazonPay</a>
-          </div>
-          <div>
-            <a href="#">CustomerService</a>
-          </div>
-          <div>
-            <a href="#">Today'sDeals</a>
-          </div>
-          <div>
-            <a href="#">NewRealeses</a>
-          </div>
-          <div>
-            <a href="#">Computers</a>
-          </div>
-          <div>
-            <a href="#">homeKitchen</a>
-          </div>
-          <div>
-            <a href="#">Toys&games</a>
-          </div>
-          <div>
-            <a href="#">Books</a>
-          </div>
-          <div>
-            <a href="#">Sell</a>
-          </div> */}
-            <div
-              className="col product-hover hover-img"
-              style={{ padding: "0px 10px" }}
-            >
-              <img
-                src="https://images-eu.ssl-images-amazon.com/images/G/31/IN-hq/2021/img/Mobile_Traffic_/XCM_Manual_1321458_1651511_IN_3781247_400x39_en_IN._CB655944656_.jpg"
-                alt="img"
-              />
             </div>
           </div>
         </nav>
