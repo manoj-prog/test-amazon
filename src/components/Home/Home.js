@@ -4,6 +4,7 @@ import "./Home.css";
 import Categories from "../Categories/Categories";
 import ImageSection from "../Image-section/ImageSection";
 import ProductCards from "../ProductCards/ProductCards";
+import Footer from "../Footer/Footer";
 function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ function Home() {
       <Categories />
       <ImageSection />
       <ProductCards />
+      <Footer />
     </>
   );
 }

@@ -30,7 +30,7 @@ function Header() {
                 <PersonPinCircleIcon />
               </div>
               <div className="header-nav-branch">
-                <span>Hello there updated for test</span>
+                <span>Hello there</span>
                 <span>Select your address</span>
               </div>
             </div>
