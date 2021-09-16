@@ -2,7 +2,11 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Collapse from "react-bootstrap/Collapse";
 const MenFashion = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div>
       <header className="row">
@@ -27,8 +31,71 @@ const MenFashion = () => {
           <hr />
         </div>
         <div className="row">
+          <Button
+            onClick={() => setOpen(!open)}
+            aria-controls="example-collapse-text"
+            aria-expanded={open}
+          >
+            click
+          </Button>
+          <Collapse in={open}>
+            <div id="example-collapse-text">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente
+              ea proident.
+            </div>
+          </Collapse>
+        </div>
+        <div className="row">
           <div className="col-2">hi</div>
           <div className="col-10">hello</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div id="list-example" class="list-group">
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-item-1"
+            >
+              Item 1
+            </a>
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-item-2"
+            >
+              Item 2
+            </a>
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-item-3"
+            >
+              Item 3
+            </a>
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-item-4"
+            >
+              Item 4
+            </a>
+          </div>
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-offset="0"
+            class="scrollspy-example"
+            tabindex="0"
+          >
+            <h4 id="list-item-1">Item 1</h4>
+            <p>...</p>
+            <h4 id="list-item-2">Item 2</h4>
+            <p>...</p>
+            <h4 id="list-item-3">Item 3</h4>
+            <p>...</p>
+            <h4 id="list-item-4">Item 4</h4>
+            <p>...</p>
+          </div>
         </div>
       </div>
       <footer className="row">

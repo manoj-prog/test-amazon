@@ -8,7 +8,7 @@ import Furniture from "../resources/furniture.jpg";
 const ImageSection = () => {
   return (
     <div className="carousel--local">
-      <Carousel style={{ zIndex: "2" }}>
+      <Carousel interval={null} style={{ zIndex: "2" }}>
         <Carousel.Item>
           <img
             className="d-block w-100 carouselImage "

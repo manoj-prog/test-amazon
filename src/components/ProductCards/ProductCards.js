@@ -313,6 +313,7 @@ const ProductCards = () => {
           id="carouselExampleControls"
           class="carousel slide"
           data-bs-ride="carousel"
+          data-bs-interval="false"
         >
           <div class="carousel-inner">
             <div class="carousel-item active">

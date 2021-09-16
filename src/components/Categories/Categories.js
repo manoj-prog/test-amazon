@@ -93,7 +93,6 @@ const Categories = () => {
                     </li>
                     <li>
                       <a
-                        href="!#"
                         onClick={() => history.push("/menfashion")}
                         style={{ cursor: "pointer" }}
                       >
@@ -102,7 +101,10 @@ const Categories = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="!#">
+                      <a
+                        onClick={() => history.push("/book")}
+                        style={{ cursor: "pointer" }}
+                      >
                         Women's fashion
                         <KeyboardArrowRightIcon className="arrow-icon" />
                       </a>
@@ -134,7 +136,12 @@ const Categories = () => {
                   </a>
                 </li>
                 <li class="nav-item product-hover ml-2">
-                  <a class="nav-link active" aria-current="page" href="!#">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    onClick={() => history.push("/book")}
+                    style={{ cursor: "pointer" }}
+                  >
                     <span>CustomerService</span>
                   </a>
                 </li>
